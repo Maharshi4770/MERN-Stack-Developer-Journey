@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Baskervville SC", serif;
+}
+
+body {
+    background-color: #bbc6fa;
+}
+
+.quotebox {
+    background-color: white;
+    width: 700px;
+    height: 500px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 4px 4px 4px 4px #888888;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.quotebox h2 {
+    font-size: 32px;
+    font-weight: 700;
+    position: relative;
+}
+
+.quotebox h2::after {
+    content: '';
+    width: 75px;
+    height: 3px;
+    border-radius: 3px;
+    position: absolute;
+    background-color: rgb(23, 124, 229);
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 10px;
+}
+
+.quotebox blockquote {
+    font-size: 26px;
+    min-height: 80px;
+}
+
+.quotebox blockquote::before,
+.quotebox blockquote::after {
+    content: '"';
+}
+
+.quotebox span {
+    display: block;
+    margin-top: 10px;
+    float: right;
+    position: relative;
+    margin-left: 80%;
+}
+
+.quotebox span::before {
+    content: '';
+    width: 20px;
+    height: 2px;
+    /* background-color: rgb(23, 124, 229); */
+    position: absolute;
+    top: 50%;
+    left: 4%;
+}
+
+.quotebox div {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.quotebox button {
+    background-color: rgb(23, 124, 229);
+    color: #333;
+    font-weight: 600;
+    border-radius: 25px;
+    border: 1px solid rgb(23, 124, 229);
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    margin-top: -50px;
+    cursor: pointer;
+}
+
+.quotebox button:nth-child(2) {
+    background-color: transparent;
+}

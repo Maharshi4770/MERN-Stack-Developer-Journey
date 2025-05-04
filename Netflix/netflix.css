@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+ 
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "poppins", sans-serif;
+}
+body{
+    background-color: black;
+}
+.main{
+    background-image: url(./assets/img/bg.jpg);
+    background-position: center center;
+    background-size: max(1200px,100vw);
+    background-repeat: no-repeat;
+    height: 70vh;
+    position: relative;
+}
+.main .box{
+    height: 70vh;
+    width: 100%;
+    top: 0;
+    position: absolute;
+    background-color: black;
+    opacity: 0.74;
+}
+nav{
+    max-width: 60vw;
+    margin: auto;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    height: 62px;
+}
+nav img{
+    color: red;
+    position: relative;
+    width: 114px;
+    z-index: 10;
+}
+nav button{
+    position: relative;
+    z-index: 10;
+}
+.hero{
+    font-family: "Martel Sans", sans-serif;
+    height: calc(100% - 62px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 20px;
+    z-index: 10;
+    padding: 0 30px;
+}
+.hero> :first-child{
+    font-weight: 600;
+    font-size: 48px;
+    color: white;
+    text-align: center;
+}
+.hero> :nth-child(2){
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+}
+.hero :nth-child(3){
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+.sep{
+    height: 7px;
+    background-color: rgba(87, 86, 86, 0.477);
+}
+.btn{
+    padding: 3px 8px;
+    font-weight: bold;
+    background-color: white;
+}
+.btn-red{
+    background-color: red;
+    color: white;
+    padding: 13px 24px;
+    font-size: 20px;
+    border-radius: 4px;
+}
+.btn-red-sm{
+    background-color: red;
+    color: white;
+    font: 300;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+.main input{
+    padding: 13px 24px;
+    color: white;
+    font-size: 20px;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.2);
+    border: 1px solid rgba(207, 194, 194, 0.3);
+}
+.btn1{
+    padding: 3px 8px;
+    font-weight: bold;
+    background-color: rgba(23, 23, 23, 0.3);
+    border-radius: 4px;
+    color: white;
+    border: 1px solid white ;
+}
+.first{
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+.secimg{
+    position: relative;
+}
+.secimg img{
+    position: relative;
+    width: 30vw;
+    z-index: 10;
+    margin-top: 20px;
+}
+.secimg video{
+    position: absolute;
+    top: 70px;
+    right: 30px;
+    width: 24vw;
+}
+.first >div{
+    display: flex;
+    flex-direction: column;
+}
+.first > div :first-child{
+    font-family: "poppins", sans-serif;
+    font-size: 48px;
+    font-weight: bolder;
+}
+.first > div :nth-child(2){
+    font-size: 24px;
+}
+.third .secimg img{
+    position: relative;
+    width: 30vw;
+    z-index: 10;
+    margin-top: 20px;
+}
+.third video{
+    position: absolute;
+    margin-top: -14px;
+    right: 95px;
+    width: 19vw;
+}
+.faq h2{
+    text-align: center;
+    font-size: 48px;
+}
+.faq{
+    background-color: black;
+    color: white;
+    padding: 34px;
+    font-size: 24px;
+}
+.faqbox:hover{
+    background-color: rgb(79, 77, 77);
+}
+.faqbox svg :hover{
+    transform: rotate(90deg);
+}
+.faqbox{
+    transition: all 1s ease-in;
+    display: flex;
+    background-color: #2d2d2d;
+    padding: 25px;
+    max-width: 80vw;
+    margin: 14px auto;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.sec4 input{
+    margin-left: 550px;
+    margin-top: 15px;
+    padding: 13px 24px;
+    color: white;
+    font-size: 20px;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.2);
+    border: 1px solid rgba(207, 194, 194, 0.3);
+}
+.sec4 h4{
+        text-align: center;
+}
+
+footer{
+    display: flex;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 15px 20px;
+}
+h4{
+    margin-top: 40px;
+    margin-left: 140px;
+}
+footer ul{
+    list-style-type: none;
+}
+ul li a{
+    color:rgba(255, 255, 255, 0.7);
+}
+.demo{
+    display: flex;
+    justify-content: center;
+}
+
+.one{
+    height: 200px;
+    margin-top: 80px;
+    margin-left: -250px;
+    line-height: 40px;
+}
+.two{
+    height: 200px;
+    margin-top: 70px;
+    margin-left: 150px;
+    line-height: 40px;
+}
+.three{
+    height: 200px;
+    margin-top: 70px;
+    margin-left: 150px;
+    line-height: 40px;
+}
+.four{
+    height: 200px;
+    margin-top: 70px;
+    margin-left: 150px;
+    line-height: 40px;
+}
+.demo div input{
+    margin-top: 5px;
+    margin-left: -550px;
+    padding: 6px 24px;
+    color: white;
+    font-size: 20px;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.2);
+    border: 1px solid rgba(207, 194, 194, 0.3);
+}
